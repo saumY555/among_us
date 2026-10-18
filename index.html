@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Among Us: Emergency Meeting Night | Student Event</title>
+    <meta
+      name="description"
+      content="Play smart. Lie better. Survive longer. Join Among Us: Emergency Meeting Night on Saturday, 17th October 2026, 5:00 PM at NTB, Room- TC103. Free entry for all students!"
+    />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+
+    <!-- Google Fonts: Space Grotesk (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Background Starfield Elements -->
+    <div class="stars-layer stars-layer-1" aria-hidden="true"></div>
+    <div class="stars-layer stars-layer-2" aria-hidden="true"></div>
+    <div class="stars-layer stars-layer-3" aria-hidden="true"></div>
+
+    <!-- 1. STICKY NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="#hero" class="nav-brand" aria-label="Among Us Emergency Meeting Night Homepage">
+          <!-- Mini Original Crewmate Vector Icon -->
+          <div class="brand-avatar" aria-hidden="true">
+            <svg class="crewmate-mini-svg" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="46" width="20" height="52" rx="10" fill="#F45858" stroke="#060919" stroke-width="6" />
+              <path d="M 28 46 C 28 16 92 16 92 46 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 L 20 54 C 20 50 24 46 28 46 Z" fill="#F45858" stroke="#060919" stroke-width="6" stroke-linejoin="round" />
+              <rect x="46" y="34" width="52" height="30" rx="15" fill="#67C9F5" stroke="#060919" stroke-width="5" />
+              <path d="M 52 41 Q 68 37 84 40 Q 78 45 66 45 Q 57 45 52 41 Z" fill="#FFFFFF" fill-opacity="0.85" />
+            </svg>
+          </div>
+          <span class="brand-text">EMERGENCY <span class="text-red">MEETING</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-links" id="navMenu" aria-label="Main Navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#schedule" class="nav-link">Schedule</a>
+          <a href="#prizes" class="nav-link">Prizes</a>
+          <a href="#register" class="nav-link">Register</a>
+          <a href="#register" class="btn btn-red btn-nav-cta">Register</a>
+        </nav>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button
+          class="nav-hamburger"
+          id="hamburgerBtn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- 2. HERO SECTION -->
+      <section class="hero-section" id="hero">
+        <!-- Floating Original Crewmates in Space (Pure CSS/SVG, pointer-events none) -->
+        <div class="floating-crewmate crewmate-float-1" aria-hidden="true" style="--crewmate-color: #F45858;">
+          <svg class="crewmate-svg" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="46" width="20" height="52" rx="10" fill="currentColor" stroke="#060919" stroke-width="6" />
+            <path d="M 28 46 C 28 16 92 16 92 46 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 L 20 54 C 20 50 24 46 28 46 Z" fill="currentColor" stroke="#060919" stroke-width="6" stroke-linejoin="round" />
+            <path d="M 23 88 C 36 98 76 98 89 88 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 Z" fill="rgba(0,0,0,0.22)" />
+            <rect x="46" y="34" width="52" height="30" rx="15" fill="#67C9F5" stroke="#060919" stroke-width="5" />
+            <path d="M 52 41 Q 68 37 84 40 Q 78 45 66 45 Q 57 45 52 41 Z" fill="#FFFFFF" fill-opacity="0.85" />
+          </svg>
+        </div>
+
+        <div class="floating-crewmate crewmate-float-2" aria-hidden="true" style="--crewmate-color: #67C9F5;">
+          <svg class="crewmate-svg" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="46" width="20" height="52" rx="10" fill="currentColor" stroke="#060919" stroke-width="6" />
+            <path d="M 28 46 C 28 16 92 16 92 46 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 L 20 54 C 20 50 24 46 28 46 Z" fill="currentColor" stroke="#060919" stroke-width="6" stroke-linejoin="round" />
+            <path d="M 23 88 C 36 98 76 98 89 88 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 Z" fill="rgba(0,0,0,0.22)" />
+            <rect x="46" y="34" width="52" height="30" rx="15" fill="#67C9F5" stroke="#060919" stroke-width="5" />
+            <path d="M 52 41 Q 68 37 84 40 Q 78 45 66 45 Q 57 45 52 41 Z" fill="#FFFFFF" fill-opacity="0.85" />
+          </svg>
+        </div>
+
+        <div class="floating-crewmate crewmate-float-3" aria-hidden="true" style="--crewmate-color: #FFD166;">
+          <svg class="crewmate-svg" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="46" width="20" height="52" rx="10" fill="currentColor" stroke="#060919" stroke-width="6" />
+            <path d="M 28 46 C 28 16 92 16 92 46 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 L 20 54 C 20 50 24 46 28 46 Z" fill="currentColor" stroke="#060919" stroke-width="6" stroke-linejoin="round" />
+            <path d="M 23 88 C 36 98 76 98 89 88 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 Z" fill="rgba(0,0,0,0.22)" />
+            <rect x="46" y="34" width="52" height="30" rx="15" fill="#67C9F5" stroke="#060919" stroke-width="5" />
+            <path d="M 52 41 Q 68 37 84 40 Q 78 45 66 45 Q 57 45 52 41 Z" fill="#FFFFFF" fill-opacity="0.85" />
+          </svg>
+        </div>
+
+        <div class="floating-crewmate crewmate-float-4" aria-hidden="true" style="--crewmate-color: #B8A5F5;">
+          <svg class="crewmate-svg" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="46" width="20" height="52" rx="10" fill="currentColor" stroke="#060919" stroke-width="6" />
+            <path d="M 28 46 C 28 16 92 16 92 46 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 L 20 54 C 20 50 24 46 28 46 Z" fill="currentColor" stroke="#060919" stroke-width="6" stroke-linejoin="round" />
+            <path d="M 23 88 C 36 98 76 98 89 88 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 Z" fill="rgba(0,0,0,0.22)" />
+            <rect x="46" y="34" width="52" height="30" rx="15" fill="#67C9F5" stroke="#060919" stroke-width="5" />
+            <path d="M 52 41 Q 68 37 84 40 Q 78 45 66 45 Q 57 45 52 41 Z" fill="#FFFFFF" fill-opacity="0.85" />
+          </svg>
+        </div>
+
+        <div class="hero-container">
+          <!-- Spaceship Mission Status Pill -->
+          <div class="mission-status-pill">
+            <span class="status-indicator"></span>
+            <span class="status-text">OFFICIAL SHIP TRANSMISSION // ALL CREW ACTIVE</span>
+          </div>
+
+          <!-- Hero Main Title -->
+          <h1 class="hero-title">
+            Among Us: <span class="hero-highlight">Emergency Meeting Night</span>
+          </h1>
+
+          <!-- Event Tagline -->
+          <p class="hero-tagline">Play smart. Lie better. Survive longer</p>
+
+          <!-- 5-Second Clarity: Date / Time / Venue / Entry Chips -->
+          <div class="hero-chips" role="region" aria-label="Event Key Details">
+            <div class="hud-chip">
+              <i data-lucide="calendar" class="chip-icon text-cyan" aria-hidden="true"></i>
+              <div class="chip-text">
+                <span class="chip-label">WHEN</span>
+                <span class="chip-value">Saturday, 17th October 2026, 5:00 PM</span>
+              </div>
+            </div>
+
+            <div class="hud-chip">
+              <i data-lucide="map-pin" class="chip-icon text-yellow" aria-hidden="true"></i>
+              <div class="chip-text">
+                <span class="chip-label">WHERE</span>
+                <span class="chip-value">NTB, Room- TC103</span>
+              </div>
+            </div>
+
+            <div class="hud-chip">
+              <i data-lucide="ticket" class="chip-icon text-green" aria-hidden="true"></i>
+              <div class="chip-text">
+                <span class="chip-label">ENTRY</span>
+                <span class="chip-value">Free, open to all students</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Countdown Timer Display -->
+          <div class="countdown-panel" role="timer" aria-live="polite" aria-label="Countdown to Event">
+            <div class="countdown-header">
+              <i data-lucide="clock" class="countdown-icon text-red" aria-hidden="true"></i>
+              <span>TIME UNTIL MEETING COMMENCES</span>
+            </div>
+            
+            <div class="countdown-grid" id="countdownGrid">
+              <div class="countdown-slot">
+                <div class="countdown-digit" id="daysCount">00</div>
+                <div class="countdown-label">DAYS</div>
+              </div>
+              <div class="countdown-separator" aria-hidden="true">:</div>
+              <div class="countdown-slot">
+                <div class="countdown-digit" id="hoursCount">00</div>
+                <div class="countdown-label">HOURS</div>
+              </div>
+              <div class="countdown-separator" aria-hidden="true">:</div>
+              <div class="countdown-slot">
+                <div class="countdown-digit" id="minsCount">00</div>
+                <div class="countdown-label">MINUTES</div>
+              </div>
+              <div class="countdown-separator" aria-hidden="true">:</div>
+              <div class="countdown-slot">
+                <div class="countdown-digit" id="secsCount">00</div>
+                <div class="countdown-label">SECONDS</div>
+              </div>
+            </div>
+            <div class="countdown-started hidden" id="countdownStarted">
+              🚨 The meeting has started! 🚨
+            </div>
+          </div>
+
+          <!-- Hero Action CTA Buttons -->
+          <div class="hero-actions">
+            <a href="#register" class="btn btn-red btn-hero btn-register">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <span>Register Now</span>
+            </a>
+            <a href="#about" class="btn btn-outline btn-hero">
+              <i data-lucide="shield-alert" aria-hidden="true"></i>
+              <span>Event Briefing</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. ABOUT SECTION -->
+      <section class="section about-section" id="about">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-eyebrow text-cyan">DATA LOG // OVERVIEW</span>
+            <h2 class="section-title">About The Operation</h2>
+            <div class="about-summary">
+              <p>
+                Get ready for an adrenaline-fueled night of deception, alibis, and split-second survival on campus.
+                Whether you are meticulously swiping cards in Admin or quietly sabotaging the reactor in the shadows,
+                every meeting is a test of who you can truly trust.
+              </p>
+              <p class="about-format-callout">
+                <span class="text-yellow">What happens:</span> <strong>3 rounds</strong>, <strong>teams of 10</strong>, with coveted prizes awarded to the <strong>best crewmate</strong> and <strong>best impostor</strong>!
+              </p>
+            </div>
+          </div>
+
+          <!-- 3 Spaceship Info Cards -->
+          <div class="cards-grid cards-grid-3">
+            <!-- Card 1: Date -->
+            <article class="panel-card glow-cyan">
+              <div class="panel-card-header">
+                <div class="panel-icon-wrap bg-cyan-dim">
+                  <i data-lucide="calendar" class="panel-icon text-cyan" aria-hidden="true"></i>
+                </div>
+                <span class="panel-badge text-cyan">TIMING</span>
+              </div>
+              <h3 class="panel-card-title">Event Date & Time</h3>
+              <p class="panel-card-main text-cyan">Saturday, 17th October 2026</p>
+              <p class="panel-card-sub">Doors open at 4:45 PM. Matches officially commence at <strong>5:00 PM</strong> sharp.</p>
+            </article>
+
+            <!-- Card 2: Venue -->
+            <article class="panel-card glow-yellow">
+              <div class="panel-card-header">
+                <div class="panel-icon-wrap bg-yellow-dim">
+                  <i data-lucide="map-pin" class="panel-icon text-yellow" aria-hidden="true"></i>
+                </div>
+                <span class="panel-badge text-yellow">LOCATION</span>
+              </div>
+              <h3 class="panel-card-title">Ship Sector</h3>
+              <p class="panel-card-main text-yellow">NTB, Room- TC103</p>
+              <p class="panel-card-sub">Campus New Technical Block (NTB). Look for the red emergency beacon signage outside TC103.</p>
+            </article>
+
+            <!-- Card 3: Entry -->
+            <article class="panel-card glow-green">
+              <div class="panel-card-header">
+                <div class="panel-icon-wrap bg-green-dim">
+                  <i data-lucide="ticket" class="panel-icon text-green" aria-hidden="true"></i>
+                </div>
+                <span class="panel-badge text-green">ADMISSION</span>
+              </div>
+              <h3 class="panel-card-title">Student Entry</h3>
+              <p class="panel-card-main text-green">Free, open to all students</p>
+              <p class="panel-card-sub">No entry fees required. Bring your student ID and your sharpest poker face!</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. SCHEDULE SECTION ("Tasks List" Timeline) -->
+      <section class="section schedule-section" id="schedule">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-eyebrow text-green">REACTOR MONITOR // TASKS</span>
+            <h2 class="section-title">Schedule of Tasks</h2>
+            <p class="section-description">
+              Follow the in-flight checklist. Complete your tasks before the impostors sabotage the reactor.
+            </p>
+          </div>
+
+          <!-- Tasks List Timeline Container -->
+          <div class="tasks-panel">
+            <div class="tasks-panel-top">
+              <div class="tasks-hud-title">
+                <i data-lucide="list-checks" class="text-green" aria-hidden="true"></i>
+                <span>CURRENT OBJECTIVES: 5 / 5 TOTAL</span>
+              </div>
+              <div class="tasks-hud-pill">SHIP STATUS: OPERATIONAL</div>
+            </div>
+
+            <ol class="tasks-list">
+              <!-- Task 1: Check-in -->
+              <li class="task-item">
+                <div class="task-checkbox" aria-hidden="true">
+                  <i data-lucide="check" class="task-check-icon"></i>
+                </div>
+                <div class="task-time-box">
+                  <span class="task-time">17:00</span>
+                  <span class="task-phase">PHASE 01</span>
+                </div>
+                <div class="task-content">
+                  <h3 class="task-title">Crew Check-in & Lobby Assignment</h3>
+                  <p class="task-desc">
+                    Arrive at NTB Room- TC103. Claim your crewmate pass, select your match lobby, and join your designated 10-player team.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Task 2: Round 1 -->
+              <li class="task-item">
+                <div class="task-checkbox" aria-hidden="true">
+                  <i data-lucide="check" class="task-check-icon"></i>
+                </div>
+                <div class="task-time-box">
+                  <span class="task-time">17:20</span>
+                  <span class="task-phase">PHASE 02</span>
+                </div>
+                <div class="task-content">
+                  <h3 class="task-title">Round 1: Calibration Matches</h3>
+                  <p class="task-desc">
+                    The initial 10-player rounds commence. Test your tasks in Electrical, report suspicious activity, and survive the first emergency vote.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Task 3: Round 2 -->
+              <li class="task-item">
+                <div class="task-checkbox" aria-hidden="true">
+                  <i data-lucide="check" class="task-check-icon"></i>
+                </div>
+                <div class="task-time-box">
+                  <span class="task-time">18:10</span>
+                  <span class="task-phase">PHASE 03</span>
+                </div>
+                <div class="task-content">
+                  <h3 class="task-title">Round 2: Reactor Meltdown & Deception</h3>
+                  <p class="task-desc">
+                    High stakes round. The lobbies reshuffle. Impostors execute stealth plays while crewmates must coordinate emergency repairs.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Task 4: Final Round -->
+              <li class="task-item">
+                <div class="task-checkbox" aria-hidden="true">
+                  <i data-lucide="check" class="task-check-icon"></i>
+                </div>
+                <div class="task-time-box">
+                  <span class="task-time">19:00</span>
+                  <span class="task-phase">PHASE 04</span>
+                </div>
+                <div class="task-content">
+                  <h3 class="task-title">Final Round: The Ultimate Meeting</h3>
+                  <p class="task-desc">
+                    The top surviving crewmates and deadliest impostors face off in the championship lobby. One misstep leads straight out the airlock.
+                  </p>
+                </div>
+              </li>
+
+              <!-- Task 5: Prizes -->
+              <li class="task-item">
+                <div class="task-checkbox" aria-hidden="true">
+                  <i data-lucide="check" class="task-check-icon"></i>
+                </div>
+                <div class="task-time-box">
+                  <span class="task-time">19:45</span>
+                  <span class="task-phase">PHASE 05</span>
+                </div>
+                <div class="task-content">
+                  <h3 class="task-title">Emergency Debrief & Prize Distribution</h3>
+                  <p class="task-desc">
+                    All hands on deck in Cafeteria. Official awards ceremony for Best Crewmate, Best Impostor, and our Top Team.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. PRIZES SECTION -->
+      <section class="section prizes-section" id="prizes">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-eyebrow text-yellow">REWARD PROTOCOL // BOUNTIES</span>
+            <h2 class="section-title">Mission Prizes</h2>
+            <p class="section-description">
+              Earn glory and rewards across 3 distinct competitive categories.
+            </p>
+          </div>
+
+          <div class="cards-grid cards-grid-3">
+            <!-- Prize 1: Best Crewmate -->
+            <article class="panel-card prize-card glow-cyan">
+              <div class="prize-badge-pill bg-cyan-dim text-cyan">INSPECTION AWARD</div>
+              <div class="panel-icon-wrap prize-trophy bg-cyan-dim">
+                <i data-lucide="shield-check" class="panel-icon text-cyan" aria-hidden="true"></i>
+              </div>
+              <h3 class="prize-title">Best Crewmate</h3>
+              <p class="prize-criteria">
+                Awarded for sharpest analytical deductions, highest task completion rates, and correctly identifying impostors during voting meetings.
+              </p>
+              <div class="prize-loot">
+                <i data-lucide="trophy" class="text-cyan" aria-hidden="true"></i>
+                <span>Trophy + Custom Swag Bundle</span>
+              </div>
+            </article>
+
+            <!-- Prize 2: Best Impostor -->
+            <article class="panel-card prize-card glow-red">
+              <div class="prize-badge-pill bg-red-dim text-red">DECEPTION AWARD</div>
+              <div class="panel-icon-wrap prize-trophy bg-red-dim">
+                <i data-lucide="skull" class="panel-icon text-red" aria-hidden="true"></i>
+              </div>
+              <h3 class="prize-title">Best Impostor</h3>
+              <p class="prize-criteria">
+                Awarded for masterclass deception, ironclad alibis, undetected vent plays, and successful sabotage victories without getting caught.
+              </p>
+              <div class="prize-loot">
+                <i data-lucide="trophy" class="text-red" aria-hidden="true"></i>
+                <span>Trophy + Impostor Champion Bounty</span>
+              </div>
+            </article>
+
+            <!-- Prize 3: Team Prize -->
+            <article class="panel-card prize-card glow-yellow">
+              <div class="prize-badge-pill bg-yellow-dim text-yellow">CO-OP EXCELLENCE</div>
+              <div class="panel-icon-wrap prize-trophy bg-yellow-dim">
+                <i data-lucide="users" class="panel-icon text-yellow" aria-hidden="true"></i>
+              </div>
+              <h3 class="prize-title">Team Prize</h3>
+              <p class="prize-criteria">
+                Presented to the highest-scoring 10-player squad demonstrating unmatched communication, synchronized task speed, and tactical teamwork.
+              </p>
+              <div class="prize-loot">
+                <i data-lucide="trophy" class="text-yellow" aria-hidden="true"></i>
+                <span>Exclusive Squad Medals & Prizes</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. REGISTRATION FORM SECTION -->
+      <section class="section register-section" id="register">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-eyebrow text-red">COMMS CONSOLE // ENLISTMENT</span>
+            <h2 class="section-title">Join The Crew</h2>
+            <p class="section-description">
+              Secure your spot before the dropship departs. Entry is completely free!
+            </p>
+          </div>
+
+          <div class="register-layout">
+            <!-- Left: Interactive Character Preview & Color Visualizer -->
+            <div class="suit-preview-card panel-card glow-cyan">
+              <div class="preview-badge">SPACESUIT CUSTOMIZER</div>
+              <div class="preview-avatar-stage">
+                <!-- Reusable SVG Crewmate controlled dynamically via CSS variable -->
+                <svg
+                  class="preview-crewmate-svg"
+                  id="previewCrewmateSvg"
+                  viewBox="0 0 120 140"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Live preview of your chosen crewmate spacesuit"
+                >
+                  <!-- Backpack -->
+                  <rect x="8" y="46" width="20" height="52" rx="10" class="crewmate-body-shape" stroke="#060919" stroke-width="6" />
+                  <!-- Bean Body & Legs -->
+                  <path
+                    d="M 28 46 C 28 16 92 16 92 46 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 L 20 54 C 20 50 24 46 28 46 Z"
+                    class="crewmate-body-shape"
+                    stroke="#060919"
+                    stroke-width="6"
+                    stroke-linejoin="round"
+                  />
+                  <!-- Lower shadow -->
+                  <path
+                    d="M 23 88 C 36 98 76 98 89 88 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 Z"
+                    fill="rgba(0,0,0,0.22)"
+                  />
+                  <!-- Visor -->
+                  <rect x="46" y="34" width="52" height="30" rx="15" fill="#67C9F5" stroke="#060919" stroke-width="5" />
+                  <!-- Visor Reflection -->
+                  <path d="M 52 41 Q 68 37 84 40 Q 78 45 66 45 Q 57 45 52 41 Z" fill="#FFFFFF" fill-opacity="0.85" />
+                </svg>
+              </div>
+              <div class="suit-info-box">
+                <span class="suit-selected-label">SELECTED COLOR:</span>
+                <span class="suit-selected-name" id="selectedColorName">Red (#F45858)</span>
+              </div>
+            </div>
+
+            <!-- Right: Registration Form Console -->
+            <div class="register-form-card panel-card glow-red">
+              <form class="register-form" id="registrationForm" novalidate>
+                <!-- Full Name Field -->
+                <div class="form-group">
+                  <label for="fullName" class="form-label">
+                    Full Name <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrap">
+                    <i data-lucide="user" class="input-icon" aria-hidden="true"></i>
+                    <input
+                      type="text"
+                      id="fullName"
+                      name="fullName"
+                      class="form-input"
+                      placeholder="e.g. Alex Rivera or RedSus"
+                      required
+                      minlength="2"
+                      maxlength="50"
+                      autocomplete="name"
+                    />
+                  </div>
+                  <span class="error-msg" id="nameError"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="email" class="form-label">
+                    Student Email <span class="required-star">*</span>
+                  </label>
+                  <div class="input-wrap">
+                    <i data-lucide="mail" class="input-icon" aria-hidden="true"></i>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-input"
+                      placeholder="e.g. alex.rivera@university.edu"
+                      required
+                      autocomplete="email"
+                    />
+                  </div>
+                  <span class="error-msg" id="emailError"></span>
+                </div>
+
+                <!-- Phone Field (Optional) -->
+                <div class="form-group">
+                  <label for="phone" class="form-label">
+                    Phone Number <span class="optional-tag">(Optional)</span>
+                  </label>
+                  <div class="input-wrap">
+                    <i data-lucide="phone" class="input-icon" aria-hidden="true"></i>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-input"
+                      placeholder="e.g. +1 555-0199"
+                      autocomplete="tel"
+                    />
+                  </div>
+                  <span class="error-msg" id="phoneError"></span>
+                </div>
+
+                <!-- Crewmate Color Picker -->
+                <div class="form-group">
+                  <label class="form-label" id="colorPickerLabel">
+                    Choose Your Spacesuit Color <span class="required-star">*</span>
+                  </label>
+                  <div
+                    class="color-picker-grid"
+                    role="radiogroup"
+                    aria-labelledby="colorPickerLabel"
+                  >
+                    <!-- Red -->
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="true"
+                      class="color-dot active"
+                      data-color="#F45858"
+                      data-color-name="Red"
+                      style="--dot-color: #F45858;"
+                      aria-label="Color Red"
+                    >
+                      <span class="color-dot-inner"></span>
+                    </button>
+
+                    <!-- Cyan -->
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="false"
+                      class="color-dot"
+                      data-color="#67C9F5"
+                      data-color-name="Cyan"
+                      style="--dot-color: #67C9F5;"
+                      aria-label="Color Cyan"
+                    >
+                      <span class="color-dot-inner"></span>
+                    </button>
+
+                    <!-- Yellow -->
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="false"
+                      class="color-dot"
+                      data-color="#FFD166"
+                      data-color-name="Yellow"
+                      style="--dot-color: #FFD166;"
+                      aria-label="Color Yellow"
+                    >
+                      <span class="color-dot-inner"></span>
+                    </button>
+
+                    <!-- Green -->
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="false"
+                      class="color-dot"
+                      data-color="#8DD982"
+                      data-color-name="Green"
+                      style="--dot-color: #8DD982;"
+                      aria-label="Color Green"
+                    >
+                      <span class="color-dot-inner"></span>
+                    </button>
+
+                    <!-- Purple -->
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="false"
+                      class="color-dot"
+                      data-color="#B8A5F5"
+                      data-color-name="Purple"
+                      style="--dot-color: #B8A5F5;"
+                      aria-label="Color Purple"
+                    >
+                      <span class="color-dot-inner"></span>
+                    </button>
+
+                    <!-- Peach -->
+                    <button
+                      type="button"
+                      role="radio"
+                      aria-checked="false"
+                      class="color-dot"
+                      data-color="#FFE5D1"
+                      data-color-name="Peach"
+                      style="--dot-color: #FFE5D1;"
+                      aria-label="Color Peach"
+                    >
+                      <span class="color-dot-inner"></span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-red btn-submit-register btn-register" id="submitBtn">
+                  <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                  <span>Join the Crew</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- EMERGENCY MEETING SUCCESS POPUP MODAL -->
+    <div
+      class="modal-backdrop hidden"
+      id="emergencyModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDesc"
+    >
+      <div class="modal-card emergency-meeting-card">
+        <!-- Close button top-right -->
+        <button
+          class="modal-close-btn"
+          id="closeModalBtn"
+          aria-label="Close Emergency Meeting modal"
+        >
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+
+        <div class="emergency-siren-banner">
+          <i data-lucide="siren" class="siren-icon text-red" aria-hidden="true"></i>
+          <span class="emergency-banner-text">EMERGENCY MEETING CALLED</span>
+          <i data-lucide="siren" class="siren-icon text-red" aria-hidden="true"></i>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-crewmate-badge" id="modalCrewmateDisplay" aria-hidden="true">
+            <svg class="modal-crewmate-svg" viewBox="0 0 120 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="46" width="20" height="52" rx="10" class="crewmate-body-shape" stroke="#060919" stroke-width="6" />
+              <path d="M 28 46 C 28 16 92 16 92 46 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 L 20 54 C 20 50 24 46 28 46 Z" class="crewmate-body-shape" stroke="#060919" stroke-width="6" stroke-linejoin="round" />
+              <path d="M 23 88 C 36 98 76 98 89 88 L 92 100 C 92 108 86 114 78 114 L 68 114 C 62 114 58 108 58 100 L 58 88 L 52 88 L 52 100 C 52 108 48 114 42 114 L 32 114 C 24 114 20 108 20 100 Z" fill="rgba(0,0,0,0.22)" />
+              <rect x="46" y="34" width="52" height="30" rx="15" fill="#67C9F5" stroke="#060919" stroke-width="5" />
+              <path d="M 52 41 Q 68 37 84 40 Q 78 45 66 45 Q 57 45 52 41 Z" fill="#FFFFFF" fill-opacity="0.85" />
+            </svg>
+          </div>
+
+          <h2 class="modal-title" id="modalTitle">YOU HAVE JOINED THE CREW!</h2>
+          
+          <div class="modal-desc" id="modalDesc">
+            <p>Welcome aboard, <strong id="modalRegisteredName" class="text-yellow">Crewmate</strong>!</p>
+            <p>Your registration for <strong>Among Us: Emergency Meeting Night</strong> is officially confirmed.</p>
+            
+            <div class="modal-intel-box">
+              <div class="modal-intel-item">
+                <i data-lucide="calendar" class="text-cyan" aria-hidden="true"></i>
+                <span>Saturday, 17th October 2026 at 5:00 PM</span>
+              </div>
+              <div class="modal-intel-item">
+                <i data-lucide="map-pin" class="text-yellow" aria-hidden="true"></i>
+                <span>NTB, Room- TC103</span>
+              </div>
+              <div class="modal-intel-item">
+                <i data-lucide="shield" class="text-green" aria-hidden="true"></i>
+                <span>Assigned Suit Color: <strong id="modalRegisteredColor">Red</strong></span>
+              </div>
+            </div>
+
+            <p class="modal-safety-warning">
+              ⚠️ <em>Keep your eyes open, do not trust anyone in vents, and watch your back.</em>
+            </p>
+          </div>
+
+          <button class="btn btn-red btn-modal-ack" id="ackModalBtn">
+            <span>Proceed to Mission</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. FOOTER SECTION -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <div class="footer-grid">
+          <!-- Column 1: Event Identity -->
+          <div class="footer-col">
+            <div class="footer-brand">
+              <span class="footer-logo text-red">AMONG US</span>
+              <span class="footer-sublogo">EMERGENCY MEETING NIGHT</span>
+            </div>
+            <p class="footer-tagline">Play smart. Lie better. Survive longer.</p>
+            <p class="footer-details">Saturday, 17th October 2026 • NTB, Room- TC103</p>
+          </div>
+
+          <!-- Column 2: Quick Navigation -->
+          <div class="footer-col">
+            <h4 class="footer-heading">NAVIGATION</h4>
+            <ul class="footer-nav-list">
+              <li><a href="#about" class="footer-link">About Operation</a></li>
+              <li><a href="#schedule" class="footer-link">Tasks Schedule</a></li>
+              <li><a href="#prizes" class="footer-link">Bounties & Prizes</a></li>
+              <li><a href="#register" class="footer-link">Enlist / Register</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact Comms -->
+          <div class="footer-col">
+            <h4 class="footer-heading">COMMS & ORGANIZER</h4>
+            <p class="footer-contact-desc">Questions about rules, room location, or team allocation?</p>
+            <a href="mailto:ambalikaroy05@gmail.com" class="footer-contact-link">
+              <i data-lucide="mail" aria-hidden="true"></i>
+              <span>ambalikaroy05@gmail.com</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-credits">
+            Event organized with passion by university students for the student gaming community.
+          </p>
+          <p class="footer-disclaimer">
+            Fan-made student project, not affiliated with Innersloth.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main JavaScript Entry -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
